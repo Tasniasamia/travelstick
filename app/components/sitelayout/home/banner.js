@@ -20,7 +20,7 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="h-[1024px]"
+      className="h-[1024px] lg:mb-[120px] mb-[60px]"
     >
       <div className="w-full h-full bg-black bg-opacity-[50%]">
         <div className="container flex flex-col  justify-center items-center pt-[172px]">
@@ -37,7 +37,7 @@ const Banner = () => {
           <h1 className="hero-header mt-[16px] xl:w-[1095px] lg:w-[1000px] sm:w-[580px]  w-full  text-white">
             Curated Adventures for the Discerning Traveler
           </h1>
-          <p className="section-description lg:w-[871px] md:w-[668px] sm:w-[580px] md:px-0 px-2 w-full text-white mt-[24px]">
+          <p className="section-description lg:w-[871px] text-center md:w-[668px] sm:w-[580px] md:px-0 px-2 w-full text-white mt-[24px]">
             Discover unforgettable destinations with Travel Stick. We bring you
             closer to the world with handpicked adventures and stress-free
             booking.
@@ -88,7 +88,7 @@ const Banner = () => {
             </button>
           </div>
           <div
-            className="p-[32px] bg-white xl:flex grid sm:grid-cols-3 grid-cols-2 gap-[24px] items-center rounded-[20px]"
+            className="p-[32px] bg-white xl:flex grid sm:grid-cols-3 grid-cols-1 gap-[24px] items-center rounded-[20px]"
             style={{ boxShadow: "0px 80px 200px -12px #0F1C331F" }}
           >
             <SelectComponent

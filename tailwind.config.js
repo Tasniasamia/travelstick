@@ -11,9 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary:"#EF8248",
+        primary:"#4CAC40",
+        primaryHover:"#398A2F",
+        primaryActive:"#2F6D28",
         primary2:"#EB662B",
-        text_primary:"#05073C"
+        text_primary:"#0A0A0A",
+        text_secondary:"#7C7C86"
       }
     },
   },
