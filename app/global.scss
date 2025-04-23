@@ -1,13 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+.font-monstar {
+  font-family: "Montserrat", sans-serif;
+}
+.font-dancing-script{
+    font-family: "Dancing Script", cursive;
 
-.font-lato{
+}
+.container {
+  @apply max-w-[1320px] mx-auto;
+}
+
+.hero-header {
+  @apply font-monstar font-semibold text-center align-middle lg:leading-[72px] md:leading-[80px] leading-[50px] text-3xl  md:text-5xl lg:text-[64px];
+}
+
+.section-description{
+    @apply font-lato font-medium text-[18px] leading-[28px] text-center ;
+
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E8EAE8;
+    padding: 11px 8px;
+    width: 184px;
+    border-radius: 8px;
+    position: relative; 
+  }
+  
+  select {
+    font-size: 16px;
+    border: 0 !important;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("/down.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    padding-right: 24px; 
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #1976d2;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .select-item {
+    color: #05073C;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
     font-family: "Lato", sans-serif;
-
-}
-
-.container{
-    @apply max-w-[1320px] mx-auto 
-}
+  }
+  
+  .select-item:valid {
+    color: #05073C;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .select-item option {
+    color: #05073C;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+  }
+  
+  
+ 
